@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-page</title>
+    <link rel="stylesheet" href="./media/styles/style.css">
+</head>
+<body>
+    <section class="login">
+        <center style="padding: 10px; border-bottom: 2px solid #000;">
+            <img src="./assests/images/logo.jpg" alt="img" width="150px">
+        </center>
+        <div class="container">
+            <div class="right-content">
+                <img src="./assests/images/login1.avif" alt="img" height="500" width="600">
+            </div>
+            <div class="left-content">
+                <center>
+                    <h1>LOGIN</h1>
+                </center>
+                <div>
+                    
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                    <small class="error" id="usercheck"></small>
+                </div>
+                <div>
+                    
+                    <input type="text" name="pass" id="pass" placeholder="Enter your Password">
+                    <small class="error" id="passcheck"></small>
+                    
+                </div>
+                <h3 class="confirm" id="conform"></h3>
+    
+                <center>
+                    <button type="button" class="s-button" onclick="login()">SUBMIT</button>
+                </center>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./media/styles/register.js"></script>
+
+</body>
+</html>

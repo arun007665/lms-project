@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./media/styles/register.css">
+</head>
+<body>
+    <center style="padding: 10px; border-bottom: 2px solid #000;">
+        <img src="./assests/images/logo.jpg" alt="img" width="150px">
+    </center>
+    <section class="register">
+        
+        <form  method="post" onchange="handler(event)" onreset="resethandler()" id="form-register" name="cform"        >
+            
+        
+
+        <center>
+            <h2>REGISTER</h2>
+        </center>
+        
+        <div class="form-group">
+            
+            <input type="text" name="user" id="user" placeholder="Enter Your Username">
+            <small class="error" id="nameErr"></small>
+        </div>
+        <div class="form-group">
+            
+            <input type="password" name="pass" id="pass" placeholder="Enter Your Password">
+            <small class="error" id="passErr"></small>
+        </div>
+
+        <div class="form-group">
+            
+            <input type="email" name="email" id="email" placeholder="Enter Your email">
+            <small class="error" id="emailErr"></small>
+        </div>
+
+    
+
+        
+        <div class="form-group">
+            
+            <input type="text" name="colledge" id="colledge" placeholder="Enter Your Colledge name">
+            <small class="error" id="colledgeErr"></small>
+        </div>
+
+        <div class="form-group">
+            
+            <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile Number">
+            <small class="error" id="mobileErr"></small>
+        </div>
+        <span style="font-size: 1.2rem;">Have an Account already?<a href="./login.html" id="login">sign-in</a></span>
+
+        <div class="button">
+            <input onclick="resethandler()"  type="button" value="Reset" class="btn-res">
+            <input  onclick="register()" type="button" value="Submit" class="btn-sub">
+           
+        </div>
+        
+
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./media/styles/register.js"></script>
+
+    <script>
+        let login=document.getElementById('login');
+        login.addEventListener("click",()=>{
+            window.location.href="login.html"
+        })
+    </script>
+</body>
+</html>
